@@ -41,7 +41,8 @@ powershell
 
 cd 脚本所在目录
 .\windows_scanner.ps1
-Linux系统
+
+### Linux系统
 bash
 
 # 下载脚本
@@ -52,8 +53,37 @@ chmod +x linux_scanner.sh
  
 # 运行扫描
 sudo ./linux_scanner.sh
-macOS系统
+
+### macOS系统
 bash
+
+# 下载脚本
+curl -O https://raw.githubusercontent.com/zseagate/SilverFox-Scanner/main/scanners/macos_scanner.sh
+ 
+# 添加执行权限
+chmod +x macos_scanner.sh
+ 
+# 运行扫描
+sudo ./macos_scanner.sh
+
+
+⚠️ 结果解读
+扫描结果中若出现红色⚠️标记的可疑项，请按照以下优先级处置：
+
+紧急处置步骤
+立即断网：断开受感染设备的网络连接，防止木马进一步扩散
+隔离设备：将设备从企业内网隔离，避免横向渗透
+数据恢复：清理完成后，使用备份恢复未受感染的文件
+系统加固：修改所有账号密码、更新系统补丁、禁用Office宏
+
+🛡️ 防护建议
+❌ 不打开来源不明的邮件附件、压缩包和可执行文件
+❌ 不随意点击陌生链接，不扫描来源不明的二维码
+✅ 禁用Office默认宏功能，打开陌生文档前确认安全性
+✅ 保持操作系统和杀毒软件病毒库为最新版本
+✅ 服务器避免使用弱密码，关闭不必要的对外端口
+✅ 定期备份重要文件，采用3-2-1备份策略（3份备份、2种介质、1份离线）
+
 
 ⚠️ 结果解读
 扫描结果中若出现红色⚠️标记的可疑项，请按照以下优先级处置：
@@ -95,30 +125,7 @@ Fork本项目到自己的GitHub账号
 🔗 相关资源
 银狐木马分析报告
 国家计算机病毒应急处理中心银狐木马预警
-# 下载脚本
-curl -O https://raw.githubusercontent.com/zseagate/SilverFox-Scanner/main/scanners/macos_scanner.sh
- 
-# 添加执行权限
-chmod +x macos_scanner.sh
- 
-# 运行扫描
-sudo ./macos_scanner.sh
-⚠️ 结果解读
-扫描结果中若出现红色⚠️标记的可疑项，请按照以下优先级处置：
 
-紧急处置步骤
-立即断网：断开受感染设备的网络连接，防止木马进一步扩散
-隔离设备：将设备从企业内网隔离，避免横向渗透
-数据恢复：清理完成后，使用备份恢复未受感染的文件
-系统加固：修改所有账号密码、更新系统补丁、禁用Office宏
-
-🛡️ 防护建议
-❌ 不打开来源不明的邮件附件、压缩包和可执行文件
-❌ 不随意点击陌生链接，不扫描来源不明的二维码
-✅ 禁用Office默认宏功能，打开陌生文档前确认安全性
-✅ 保持操作系统和杀毒软件病毒库为最新版本
-✅ 服务器避免使用弱密码，关闭不必要的对外端口
-✅ 定期备份重要文件，采用3-2-1备份策略（3份备份、2种介质、1份离线）
 🤝 贡献指南
 欢迎提交Issue和Pull Request来完善本项目：
 
