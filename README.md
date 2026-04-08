@@ -93,8 +93,11 @@ sudo ./macos_scanner.sh
 隔离设备：将设备从企业内网隔离，避免横向渗透
 
 使用专杀工具清理：
-火绒银狐专杀：下载地址：https://down5.huorong.cn/tools/Hrkill-SilverFox.exe
-深信服专杀工具：下载地址：https://download.sangfor.com.cn/download/product/edr/antivirus_tool/sfakiller_x64.exe
+火绒银狐专杀：
+下载地址：https://down5.huorong.cn/tools/Hrkill-SilverFox.exe
+
+深信服专杀工具：
+下载地址：https://download.sangfor.com.cn/download/product/edr/antivirus_tool/sfakiller_x64.exe
 
 数据恢复：清理完成后，使用备份恢复未受感染的文件
 系统加固：修改所有账号密码、更新系统补丁、禁用Office宏
